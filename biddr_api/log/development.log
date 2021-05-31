@@ -83,3 +83,894 @@ FOREIGN KEY ("user_id")
   [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(8427587142396744315)[0m
   [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mBid Load (0.9ms)[0m  [1m[34mSELECT "bids".* FROM "bids"[0m
+  [1m[36mAuction Load (0.7ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Jon"], ["last_name", "Snow"], ["email", "js@winterfell.gov"], ["password_digest", "$2a$12$HsK3c/Lft76VH98DTOjdP.3aEimNeskipu75ht8En73fdLpmzCcK."], ["created_at", "2021-05-31 19:51:05.186121"], ["updated_at", "2021-05-31 19:51:05.186121"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Brian"], ["last_name", "Goldner"], ["email", "Brian.Goldner@example.com"], ["password_digest", "$2a$12$gsAJMqn2jWumIEkWOVc9y.0R3eZKAva6kzKku.pnmxskEAO/2yH.q"], ["created_at", "2021-05-31 19:51:06.562830"], ["updated_at", "2021-05-31 19:51:06.562830"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Aja"], ["last_name", "Kohler"], ["email", "Aja.Kohler@example.com"], ["password_digest", "$2a$12$1Qrm6p/JmxUVKynsdpo6pOanhdC14lCGE40aYy00G/fFgr516Lyoe"], ["created_at", "2021-05-31 19:51:06.789948"], ["updated_at", "2021-05-31 19:51:06.789948"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Michael"], ["last_name", "Johnson"], ["email", "Michael.Johnson@example.com"], ["password_digest", "$2a$12$dSBgMasfvIWcgEEJqhCPnuM6renKlJGDBZGQXUy1OWI6IaG269VzC"], ["created_at", "2021-05-31 19:51:07.017645"], ["updated_at", "2021-05-31 19:51:07.017645"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Birgit"], ["last_name", "Romaguera"], ["email", "Birgit.Romaguera@example.com"], ["password_digest", "$2a$12$yRnxqB2rp7Dfp4LyPmnuFe63MYNFNEIadm0E/pVwe7DnYjjOZDSMu"], ["created_at", "2021-05-31 19:51:07.248113"], ["updated_at", "2021-05-31 19:51:07.248113"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Angelo"], ["last_name", "Terry"], ["email", "Angelo.Terry@example.com"], ["password_digest", "$2a$12$Wl/q92Yu0BIvU693OOhLGeIcNYpovSHaaIGxEdmFRH66pCllSnVgO"], ["created_at", "2021-05-31 19:51:07.476957"], ["updated_at", "2021-05-31 19:51:07.476957"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Ardell"], ["last_name", "Ferry"], ["email", "Ardell.Ferry@example.com"], ["password_digest", "$2a$12$Odi3vkg3xCruWwhzW2M59OjrVk8Mqasf.2qllyqRGjO8R13zOYN4W"], ["created_at", "2021-05-31 19:51:07.706563"], ["updated_at", "2021-05-31 19:51:07.706563"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Dori"], ["last_name", "Abshire"], ["email", "Dori.Abshire@example.com"], ["password_digest", "$2a$12$ne5SiKQlYsVn/2.d1CBbsOW3FzTsmTRZ3eCm6MZwkr.ij.ytMYf02"], ["created_at", "2021-05-31 19:51:07.936431"], ["updated_at", "2021-05-31 19:51:07.936431"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Felipe"], ["last_name", "Krajcik"], ["email", "Felipe.Krajcik@example.com"], ["password_digest", "$2a$12$0ec49exuX0bvPuugeEQ3U.3koOqhOekfhAhDiil0j.6isOjayKK8q"], ["created_at", "2021-05-31 19:51:08.165409"], ["updated_at", "2021-05-31 19:51:08.165409"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Joselyn"], ["last_name", "Swift"], ["email", "Joselyn.Swift@example.com"], ["password_digest", "$2a$12$KI5nenWFQyvWIc3cspUG.OdNIVTq2pLtPEOFPPT4YkgPouJ2vO9sO"], ["created_at", "2021-05-31 19:51:08.392572"], ["updated_at", "2021-05-31 19:51:08.392572"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Omar"], ["last_name", "Funk"], ["email", "Omar.Funk@example.com"], ["password_digest", "$2a$12$MRicYT9EKWiJSlN4g.vNPuT2YkaNW6JOdMKlIaHUNz9M5teJzo65a"], ["created_at", "2021-05-31 19:51:08.621943"], ["updated_at", "2021-05-31 19:51:08.621943"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuction Create (1.1ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "body", "price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "We need to bypass the back-end PCI port!"], ["body", "It's not what happens to you, but how you react to it that matters."], ["price", 42], ["created_at", "2019-07-15 00:00:00"], ["updated_at", "2019-07-15 00:00:00"], ["user_id", 10]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBid Load (0.4ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBid Create (0.8ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 908], ["auction_id", 1], ["created_at", "2021-05-31 19:51:08.674483"], ["updated_at", "2021-05-31 19:51:08.674483"], ["user_id", 2]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuction Create (0.7ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "body", "price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Use the multi-byte SSL microchip, then you can index the neural microchip!"], ["body", "The mind is not a vessel to be filled but a fire to be kindled."], ["price", 19], ["created_at", "2019-11-09 00:00:00"], ["updated_at", "2019-11-09 00:00:00"], ["user_id", 9]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBid Load (0.3ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 2]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 51], ["auction_id", 2], ["created_at", "2021-05-31 19:51:08.691410"], ["updated_at", "2021-05-31 19:51:08.691410"], ["user_id", 11]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuction Create (0.7ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "body", "price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "If we calculate the hard drive, we can get to the TCP alarm through the 1080p ADP bus!"], ["body", "Know how to listen, and you will profit even from those who talk badly."], ["price", 17], ["created_at", "2018-03-12 00:00:00"], ["updated_at", "2018-03-12 00:00:00"], ["user_id", 10]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBid Load (0.3ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 3]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 542], ["auction_id", 3], ["created_at", "2021-05-31 19:51:08.717526"], ["updated_at", "2021-05-31 19:51:08.717526"], ["user_id", 2]]
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 424], ["auction_id", 3], ["created_at", "2021-05-31 19:51:08.721468"], ["updated_at", "2021-05-31 19:51:08.721468"], ["user_id", 7]]
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 889], ["auction_id", 3], ["created_at", "2021-05-31 19:51:08.723727"], ["updated_at", "2021-05-31 19:51:08.723727"], ["user_id", 6]]
+  [1m[36mBid Create (0.6ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 242], ["auction_id", 3], ["created_at", "2021-05-31 19:51:08.725818"], ["updated_at", "2021-05-31 19:51:08.725818"], ["user_id", 1]]
+  [1m[36mBid Create (0.6ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 136], ["auction_id", 3], ["created_at", "2021-05-31 19:51:08.729023"], ["updated_at", "2021-05-31 19:51:08.729023"], ["user_id", 10]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuction Create (0.5ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "body", "price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Try to transmit the SSL port, maybe it will navigate the wireless transmitter!"], ["body", "Most people would rather give than get affection."], ["price", 83], ["created_at", "2020-09-10 00:00:00"], ["updated_at", "2020-09-10 00:00:00"], ["user_id", 1]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBid Load (0.4ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 4]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 854], ["auction_id", 4], ["created_at", "2021-05-31 19:51:08.745551"], ["updated_at", "2021-05-31 19:51:08.745551"], ["user_id", 10]]
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 362], ["auction_id", 4], ["created_at", "2021-05-31 19:51:08.749207"], ["updated_at", "2021-05-31 19:51:08.749207"], ["user_id", 7]]
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 594], ["auction_id", 4], ["created_at", "2021-05-31 19:51:08.752328"], ["updated_at", "2021-05-31 19:51:08.752328"], ["user_id", 11]]
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 822], ["auction_id", 4], ["created_at", "2021-05-31 19:51:08.755023"], ["updated_at", "2021-05-31 19:51:08.755023"], ["user_id", 5]]
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 511], ["auction_id", 4], ["created_at", "2021-05-31 19:51:08.757602"], ["updated_at", "2021-05-31 19:51:08.757602"], ["user_id", 9]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 166], ["auction_id", 4], ["created_at", "2021-05-31 19:51:08.759774"], ["updated_at", "2021-05-31 19:51:08.759774"], ["user_id", 3]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 122], ["auction_id", 4], ["created_at", "2021-05-31 19:51:08.761710"], ["updated_at", "2021-05-31 19:51:08.761710"], ["user_id", 1]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 163], ["auction_id", 4], ["created_at", "2021-05-31 19:51:08.763632"], ["updated_at", "2021-05-31 19:51:08.763632"], ["user_id", 5]]
+  [1m[36mBid Create (0.7ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 474], ["auction_id", 4], ["created_at", "2021-05-31 19:51:08.765630"], ["updated_at", "2021-05-31 19:51:08.765630"], ["user_id", 1]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuction Create (0.7ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "body", "price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "The JSON application is down, synthesize the neural hard drive so we can program the RAM pixel!"], ["body", "Dignity does not consist in possessing honors, but in deserving them."], ["price", 72], ["created_at", "2019-09-19 00:00:00"], ["updated_at", "2019-09-19 00:00:00"], ["user_id", 9]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBid Load (0.4ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 5]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 115], ["auction_id", 5], ["created_at", "2021-05-31 19:51:08.782756"], ["updated_at", "2021-05-31 19:51:08.782756"], ["user_id", 10]]
+  [1m[36mBid Create (0.6ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 443], ["auction_id", 5], ["created_at", "2021-05-31 19:51:08.787462"], ["updated_at", "2021-05-31 19:51:08.787462"], ["user_id", 3]]
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 757], ["auction_id", 5], ["created_at", "2021-05-31 19:51:08.790563"], ["updated_at", "2021-05-31 19:51:08.790563"], ["user_id", 2]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 586], ["auction_id", 5], ["created_at", "2021-05-31 19:51:08.792937"], ["updated_at", "2021-05-31 19:51:08.792937"], ["user_id", 1]]
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 75], ["auction_id", 5], ["created_at", "2021-05-31 19:51:08.795100"], ["updated_at", "2021-05-31 19:51:08.795100"], ["user_id", 3]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuction Create (0.4ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "body", "price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Compressing the port won't do anything, we need to reboot the haptic adp feed!"], ["body", "The virtue of justice consists in moderation, as regulated by wisdom."], ["price", 32], ["created_at", "2018-05-26 00:00:00"], ["updated_at", "2018-05-26 00:00:00"], ["user_id", 5]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBid Load (0.4ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 6]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 10], ["auction_id", 6], ["created_at", "2021-05-31 19:51:08.810846"], ["updated_at", "2021-05-31 19:51:08.810846"], ["user_id", 9]]
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 110], ["auction_id", 6], ["created_at", "2021-05-31 19:51:08.814507"], ["updated_at", "2021-05-31 19:51:08.814507"], ["user_id", 9]]
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 552], ["auction_id", 6], ["created_at", "2021-05-31 19:51:08.817199"], ["updated_at", "2021-05-31 19:51:08.817199"], ["user_id", 11]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 414], ["auction_id", 6], ["created_at", "2021-05-31 19:51:08.819758"], ["updated_at", "2021-05-31 19:51:08.819758"], ["user_id", 5]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 287], ["auction_id", 6], ["created_at", "2021-05-31 19:51:08.821856"], ["updated_at", "2021-05-31 19:51:08.821856"], ["user_id", 8]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 963], ["auction_id", 6], ["created_at", "2021-05-31 19:51:08.823968"], ["updated_at", "2021-05-31 19:51:08.823968"], ["user_id", 5]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 392], ["auction_id", 6], ["created_at", "2021-05-31 19:51:08.825903"], ["updated_at", "2021-05-31 19:51:08.825903"], ["user_id", 3]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 702], ["auction_id", 6], ["created_at", "2021-05-31 19:51:08.827852"], ["updated_at", "2021-05-31 19:51:08.827852"], ["user_id", 8]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 480], ["auction_id", 6], ["created_at", "2021-05-31 19:51:08.829732"], ["updated_at", "2021-05-31 19:51:08.829732"], ["user_id", 6]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuction Create (0.4ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "body", "price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Use the wireless SSL bus, then you can index the virtual monitor!"], ["body", "Quality is not an act, it is a habit."], ["price", 95], ["created_at", "2017-12-13 00:00:00"], ["updated_at", "2017-12-13 00:00:00"], ["user_id", 10]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBid Load (0.2ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 7]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 30], ["auction_id", 7], ["created_at", "2021-05-31 19:51:08.843416"], ["updated_at", "2021-05-31 19:51:08.843416"], ["user_id", 4]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 826], ["auction_id", 7], ["created_at", "2021-05-31 19:51:08.847093"], ["updated_at", "2021-05-31 19:51:08.847093"], ["user_id", 3]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuction Create (0.5ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "body", "price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "You can't navigate the card without programming the bluetooth RSS interface!"], ["body", "Only the educated are free."], ["price", 42], ["created_at", "2019-10-20 00:00:00"], ["updated_at", "2019-10-20 00:00:00"], ["user_id", 6]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBid Load (0.4ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 8]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 67], ["auction_id", 8], ["created_at", "2021-05-31 19:51:08.863206"], ["updated_at", "2021-05-31 19:51:08.863206"], ["user_id", 9]]
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 559], ["auction_id", 8], ["created_at", "2021-05-31 19:51:08.867155"], ["updated_at", "2021-05-31 19:51:08.867155"], ["user_id", 1]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 617], ["auction_id", 8], ["created_at", "2021-05-31 19:51:08.869428"], ["updated_at", "2021-05-31 19:51:08.869428"], ["user_id", 7]]
+  [1m[36mBid Create (0.6ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 992], ["auction_id", 8], ["created_at", "2021-05-31 19:51:08.872012"], ["updated_at", "2021-05-31 19:51:08.872012"], ["user_id", 2]]
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 340], ["auction_id", 8], ["created_at", "2021-05-31 19:51:08.875028"], ["updated_at", "2021-05-31 19:51:08.875028"], ["user_id", 9]]
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 344], ["auction_id", 8], ["created_at", "2021-05-31 19:51:08.877569"], ["updated_at", "2021-05-31 19:51:08.877569"], ["user_id", 1]]
+  [1m[36mBid Create (0.6ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 630], ["auction_id", 8], ["created_at", "2021-05-31 19:51:08.880609"], ["updated_at", "2021-05-31 19:51:08.880609"], ["user_id", 3]]
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 747], ["auction_id", 8], ["created_at", "2021-05-31 19:51:08.883838"], ["updated_at", "2021-05-31 19:51:08.883838"], ["user_id", 9]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 336], ["auction_id", 8], ["created_at", "2021-05-31 19:51:08.886269"], ["updated_at", "2021-05-31 19:51:08.886269"], ["user_id", 5]]
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 664], ["auction_id", 8], ["created_at", "2021-05-31 19:51:08.888180"], ["updated_at", "2021-05-31 19:51:08.888180"], ["user_id", 5]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuction Create (0.5ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "body", "price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "You can't reboot the bus without navigating the mobile HTTP application!"], ["body", "The mind is not a vessel to be filled but a fire to be kindled."], ["price", 30], ["created_at", "2019-08-14 00:00:00"], ["updated_at", "2019-08-14 00:00:00"], ["user_id", 10]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBid Load (0.3ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 9]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 291], ["auction_id", 9], ["created_at", "2021-05-31 19:51:08.903620"], ["updated_at", "2021-05-31 19:51:08.903620"], ["user_id", 4]]
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 377], ["auction_id", 9], ["created_at", "2021-05-31 19:51:08.907243"], ["updated_at", "2021-05-31 19:51:08.907243"], ["user_id", 10]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 451], ["auction_id", 9], ["created_at", "2021-05-31 19:51:08.909511"], ["updated_at", "2021-05-31 19:51:08.909511"], ["user_id", 7]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 713], ["auction_id", 9], ["created_at", "2021-05-31 19:51:08.911559"], ["updated_at", "2021-05-31 19:51:08.911559"], ["user_id", 3]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 975], ["auction_id", 9], ["created_at", "2021-05-31 19:51:08.913540"], ["updated_at", "2021-05-31 19:51:08.913540"], ["user_id", 8]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 789], ["auction_id", 9], ["created_at", "2021-05-31 19:51:08.915665"], ["updated_at", "2021-05-31 19:51:08.915665"], ["user_id", 6]]
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 68], ["auction_id", 9], ["created_at", "2021-05-31 19:51:08.917540"], ["updated_at", "2021-05-31 19:51:08.917540"], ["user_id", 10]]
+  [1m[36mBid Create (0.6ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 626], ["auction_id", 9], ["created_at", "2021-05-31 19:51:08.919973"], ["updated_at", "2021-05-31 19:51:08.919973"], ["user_id", 5]]
+  [1m[36mBid Create (0.6ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 724], ["auction_id", 9], ["created_at", "2021-05-31 19:51:08.923156"], ["updated_at", "2021-05-31 19:51:08.923156"], ["user_id", 1]]
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 135], ["auction_id", 9], ["created_at", "2021-05-31 19:51:08.926109"], ["updated_at", "2021-05-31 19:51:08.926109"], ["user_id", 1]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuction Create (0.4ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "body", "price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "The EXE application is down, connect the haptic monitor so we can generate the HDD program!"], ["body", "It's not what happens to you, but how you react to it that matters."], ["price", 66], ["created_at", "2020-01-23 00:00:00"], ["updated_at", "2020-01-23 00:00:00"], ["user_id", 3]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBid Load (0.2ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 10]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 734], ["auction_id", 10], ["created_at", "2021-05-31 19:51:08.940616"], ["updated_at", "2021-05-31 19:51:08.940616"], ["user_id", 3]]
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 928], ["auction_id", 10], ["created_at", "2021-05-31 19:51:08.943901"], ["updated_at", "2021-05-31 19:51:08.943901"], ["user_id", 8]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuction Create (0.4ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "body", "price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "We need to connect the redundant JSON transmitter!"], ["body", "The virtue of justice consists in moderation, as regulated by wisdom."], ["price", 61], ["created_at", "2021-05-21 00:00:00"], ["updated_at", "2021-05-21 00:00:00"], ["user_id", 11]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBid Load (0.2ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 11]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 211], ["auction_id", 11], ["created_at", "2021-05-31 19:51:08.955305"], ["updated_at", "2021-05-31 19:51:08.955305"], ["user_id", 4]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuction Create (0.4ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "body", "price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "You can't transmit the transmitter without backing up the 1080p JSON capacitor!"], ["body", "It's not what happens to you, but how you react to it that matters."], ["price", 71], ["created_at", "2019-05-25 00:00:00"], ["updated_at", "2019-05-25 00:00:00"], ["user_id", 7]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBid Load (0.2ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 12]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 563], ["auction_id", 12], ["created_at", "2021-05-31 19:51:08.970162"], ["updated_at", "2021-05-31 19:51:08.970162"], ["user_id", 7]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 19], ["auction_id", 12], ["created_at", "2021-05-31 19:51:08.973478"], ["updated_at", "2021-05-31 19:51:08.973478"], ["user_id", 1]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 49], ["auction_id", 12], ["created_at", "2021-05-31 19:51:08.975218"], ["updated_at", "2021-05-31 19:51:08.975218"], ["user_id", 8]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 500], ["auction_id", 12], ["created_at", "2021-05-31 19:51:08.977080"], ["updated_at", "2021-05-31 19:51:08.977080"], ["user_id", 7]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 711], ["auction_id", 12], ["created_at", "2021-05-31 19:51:08.978826"], ["updated_at", "2021-05-31 19:51:08.978826"], ["user_id", 10]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 452], ["auction_id", 12], ["created_at", "2021-05-31 19:51:08.980590"], ["updated_at", "2021-05-31 19:51:08.980590"], ["user_id", 11]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 353], ["auction_id", 12], ["created_at", "2021-05-31 19:51:08.982313"], ["updated_at", "2021-05-31 19:51:08.982313"], ["user_id", 10]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuction Create (0.3ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "body", "price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "We need to synthesize the multi-byte RAM card!"], ["body", "The virtue of justice consists in moderation, as regulated by wisdom."], ["price", 49], ["created_at", "2017-11-18 00:00:00"], ["updated_at", "2017-11-18 00:00:00"], ["user_id", 2]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBid Load (0.2ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 13]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 525], ["auction_id", 13], ["created_at", "2021-05-31 19:51:08.994601"], ["updated_at", "2021-05-31 19:51:08.994601"], ["user_id", 6]]
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 759], ["auction_id", 13], ["created_at", "2021-05-31 19:51:08.997758"], ["updated_at", "2021-05-31 19:51:08.997758"], ["user_id", 4]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 881], ["auction_id", 13], ["created_at", "2021-05-31 19:51:08.999586"], ["updated_at", "2021-05-31 19:51:08.999586"], ["user_id", 6]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 150], ["auction_id", 13], ["created_at", "2021-05-31 19:51:09.001508"], ["updated_at", "2021-05-31 19:51:09.001508"], ["user_id", 8]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 88], ["auction_id", 13], ["created_at", "2021-05-31 19:51:09.003249"], ["updated_at", "2021-05-31 19:51:09.003249"], ["user_id", 11]]
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 700], ["auction_id", 13], ["created_at", "2021-05-31 19:51:09.004974"], ["updated_at", "2021-05-31 19:51:09.004974"], ["user_id", 6]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 666], ["auction_id", 13], ["created_at", "2021-05-31 19:51:09.007054"], ["updated_at", "2021-05-31 19:51:09.007054"], ["user_id", 1]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuction Create (0.4ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "body", "price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "We need to bypass the neural TCP interface!"], ["body", "The unexamined life is not worth living."], ["price", 59], ["created_at", "2019-08-13 00:00:00"], ["updated_at", "2019-08-13 00:00:00"], ["user_id", 2]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBid Load (0.2ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 14]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 250], ["auction_id", 14], ["created_at", "2021-05-31 19:51:09.019800"], ["updated_at", "2021-05-31 19:51:09.019800"], ["user_id", 5]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 29], ["auction_id", 14], ["created_at", "2021-05-31 19:51:09.023009"], ["updated_at", "2021-05-31 19:51:09.023009"], ["user_id", 5]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 187], ["auction_id", 14], ["created_at", "2021-05-31 19:51:09.024796"], ["updated_at", "2021-05-31 19:51:09.024796"], ["user_id", 3]]
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 154], ["auction_id", 14], ["created_at", "2021-05-31 19:51:09.026628"], ["updated_at", "2021-05-31 19:51:09.026628"], ["user_id", 2]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 720], ["auction_id", 14], ["created_at", "2021-05-31 19:51:09.028522"], ["updated_at", "2021-05-31 19:51:09.028522"], ["user_id", 3]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 714], ["auction_id", 14], ["created_at", "2021-05-31 19:51:09.030299"], ["updated_at", "2021-05-31 19:51:09.030299"], ["user_id", 8]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 618], ["auction_id", 14], ["created_at", "2021-05-31 19:51:09.032042"], ["updated_at", "2021-05-31 19:51:09.032042"], ["user_id", 3]]
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 962], ["auction_id", 14], ["created_at", "2021-05-31 19:51:09.033941"], ["updated_at", "2021-05-31 19:51:09.033941"], ["user_id", 1]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 706], ["auction_id", 14], ["created_at", "2021-05-31 19:51:09.035773"], ["updated_at", "2021-05-31 19:51:09.035773"], ["user_id", 8]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 327], ["auction_id", 14], ["created_at", "2021-05-31 19:51:09.037513"], ["updated_at", "2021-05-31 19:51:09.037513"], ["user_id", 10]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuction Create (0.4ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "body", "price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "We need to input the 1080p TCP feed!"], ["body", "The secret to humor is surprise."], ["price", 11], ["created_at", "2016-07-15 00:00:00"], ["updated_at", "2016-07-15 00:00:00"], ["user_id", 6]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBid Load (0.3ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 15]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 692], ["auction_id", 15], ["created_at", "2021-05-31 19:51:09.049816"], ["updated_at", "2021-05-31 19:51:09.049816"], ["user_id", 2]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 228], ["auction_id", 15], ["created_at", "2021-05-31 19:51:09.052975"], ["updated_at", "2021-05-31 19:51:09.052975"], ["user_id", 2]]
+  [1m[36mBid Create (0.7ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 103], ["auction_id", 15], ["created_at", "2021-05-31 19:51:09.054809"], ["updated_at", "2021-05-31 19:51:09.054809"], ["user_id", 8]]
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 702], ["auction_id", 15], ["created_at", "2021-05-31 19:51:09.057713"], ["updated_at", "2021-05-31 19:51:09.057713"], ["user_id", 9]]
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 193], ["auction_id", 15], ["created_at", "2021-05-31 19:51:09.060340"], ["updated_at", "2021-05-31 19:51:09.060340"], ["user_id", 9]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 484], ["auction_id", 15], ["created_at", "2021-05-31 19:51:09.062396"], ["updated_at", "2021-05-31 19:51:09.062396"], ["user_id", 5]]
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 495], ["auction_id", 15], ["created_at", "2021-05-31 19:51:09.064333"], ["updated_at", "2021-05-31 19:51:09.064333"], ["user_id", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuction Create (0.4ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "body", "price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "I'll copy the multi-byte SCSI card, that should alarm the HDD panel!"], ["body", "The unexamined life is not worth living."], ["price", 20], ["created_at", "2020-09-16 00:00:00"], ["updated_at", "2020-09-16 00:00:00"], ["user_id", 5]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBid Load (0.3ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 16]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuction Create (0.5ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "body", "price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Use the solid state XSS transmitter, then you can input the optical monitor!"], ["body", "The secret to humor is surprise."], ["price", 66], ["created_at", "2018-12-06 00:00:00"], ["updated_at", "2018-12-06 00:00:00"], ["user_id", 2]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBid Load (0.3ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 17]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 548], ["auction_id", 17], ["created_at", "2021-05-31 19:51:09.088646"], ["updated_at", "2021-05-31 19:51:09.088646"], ["user_id", 5]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 890], ["auction_id", 17], ["created_at", "2021-05-31 19:51:09.092872"], ["updated_at", "2021-05-31 19:51:09.092872"], ["user_id", 7]]
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 529], ["auction_id", 17], ["created_at", "2021-05-31 19:51:09.095492"], ["updated_at", "2021-05-31 19:51:09.095492"], ["user_id", 3]]
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 798], ["auction_id", 17], ["created_at", "2021-05-31 19:51:09.097860"], ["updated_at", "2021-05-31 19:51:09.097860"], ["user_id", 3]]
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 307], ["auction_id", 17], ["created_at", "2021-05-31 19:51:09.100488"], ["updated_at", "2021-05-31 19:51:09.100488"], ["user_id", 10]]
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 841], ["auction_id", 17], ["created_at", "2021-05-31 19:51:09.103256"], ["updated_at", "2021-05-31 19:51:09.103256"], ["user_id", 10]]
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 587], ["auction_id", 17], ["created_at", "2021-05-31 19:51:09.105845"], ["updated_at", "2021-05-31 19:51:09.105845"], ["user_id", 10]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 884], ["auction_id", 17], ["created_at", "2021-05-31 19:51:09.108507"], ["updated_at", "2021-05-31 19:51:09.108507"], ["user_id", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuction Create (0.3ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "body", "price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Use the multi-byte RSS hard drive, then you can program the haptic pixel!"], ["body", "Quality is not an act, it is a habit."], ["price", 52], ["created_at", "2018-03-27 00:00:00"], ["updated_at", "2018-03-27 00:00:00"], ["user_id", 2]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBid Load (0.3ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 18]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 217], ["auction_id", 18], ["created_at", "2021-05-31 19:51:09.120889"], ["updated_at", "2021-05-31 19:51:09.120889"], ["user_id", 2]]
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 433], ["auction_id", 18], ["created_at", "2021-05-31 19:51:09.124751"], ["updated_at", "2021-05-31 19:51:09.124751"], ["user_id", 1]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 784], ["auction_id", 18], ["created_at", "2021-05-31 19:51:09.127289"], ["updated_at", "2021-05-31 19:51:09.127289"], ["user_id", 11]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuction Create (0.4ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "body", "price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "If we index the feed, we can get to the USB alarm through the back-end JBOD feed!"], ["body", "Dignity does not consist in possessing honors, but in deserving them."], ["price", 37], ["created_at", "2020-05-07 00:00:00"], ["updated_at", "2020-05-07 00:00:00"], ["user_id", 9]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBid Load (0.2ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 19]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 955], ["auction_id", 19], ["created_at", "2021-05-31 19:51:09.140681"], ["updated_at", "2021-05-31 19:51:09.140681"], ["user_id", 8]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 747], ["auction_id", 19], ["created_at", "2021-05-31 19:51:09.144319"], ["updated_at", "2021-05-31 19:51:09.144319"], ["user_id", 4]]
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 206], ["auction_id", 19], ["created_at", "2021-05-31 19:51:09.146344"], ["updated_at", "2021-05-31 19:51:09.146344"], ["user_id", 1]]
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 829], ["auction_id", 19], ["created_at", "2021-05-31 19:51:09.149107"], ["updated_at", "2021-05-31 19:51:09.149107"], ["user_id", 9]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 137], ["auction_id", 19], ["created_at", "2021-05-31 19:51:09.151937"], ["updated_at", "2021-05-31 19:51:09.151937"], ["user_id", 3]]
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 994], ["auction_id", 19], ["created_at", "2021-05-31 19:51:09.154200"], ["updated_at", "2021-05-31 19:51:09.154200"], ["user_id", 8]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuction Create (0.4ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "body", "price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "I'll hack the digital AGP circuit, that should circuit the USB card!"], ["body", "Beware the barrenness of a busy life."], ["price", 31], ["created_at", "2016-09-24 00:00:00"], ["updated_at", "2016-09-24 00:00:00"], ["user_id", 4]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBid Load (0.2ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 20]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 61], ["auction_id", 20], ["created_at", "2021-05-31 19:51:09.168575"], ["updated_at", "2021-05-31 19:51:09.168575"], ["user_id", 11]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 762], ["auction_id", 20], ["created_at", "2021-05-31 19:51:09.172210"], ["updated_at", "2021-05-31 19:51:09.172210"], ["user_id", 11]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuction Create (0.4ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "body", "price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "The ADP transmitter is down, transmit the neural circuit so we can connect the SMS alarm!"], ["body", "The mind is not a vessel to be filled but a fire to be kindled."], ["price", 71], ["created_at", "2018-05-27 00:00:00"], ["updated_at", "2018-05-27 00:00:00"], ["user_id", 7]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBid Load (0.3ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 21]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 950], ["auction_id", 21], ["created_at", "2021-05-31 19:51:09.188209"], ["updated_at", "2021-05-31 19:51:09.188209"], ["user_id", 11]]
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 954], ["auction_id", 21], ["created_at", "2021-05-31 19:51:09.192248"], ["updated_at", "2021-05-31 19:51:09.192248"], ["user_id", 7]]
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 958], ["auction_id", 21], ["created_at", "2021-05-31 19:51:09.194962"], ["updated_at", "2021-05-31 19:51:09.194962"], ["user_id", 6]]
+  [1m[36mBid Create (0.6ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 182], ["auction_id", 21], ["created_at", "2021-05-31 19:51:09.197335"], ["updated_at", "2021-05-31 19:51:09.197335"], ["user_id", 8]]
+  [1m[36mBid Create (0.7ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 284], ["auction_id", 21], ["created_at", "2021-05-31 19:51:09.200182"], ["updated_at", "2021-05-31 19:51:09.200182"], ["user_id", 3]]
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 414], ["auction_id", 21], ["created_at", "2021-05-31 19:51:09.203321"], ["updated_at", "2021-05-31 19:51:09.203321"], ["user_id", 9]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 184], ["auction_id", 21], ["created_at", "2021-05-31 19:51:09.206050"], ["updated_at", "2021-05-31 19:51:09.206050"], ["user_id", 9]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuction Create (0.4ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "body", "price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "If we quantify the microchip, we can get to the CSS firewall through the optical FTP driver!"], ["body", "It is impossible to begin to learn that which one thinks one already knows."], ["price", 95], ["created_at", "2020-11-05 00:00:00"], ["updated_at", "2020-11-05 00:00:00"], ["user_id", 5]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBid Load (0.2ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 22]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 267], ["auction_id", 22], ["created_at", "2021-05-31 19:51:09.220133"], ["updated_at", "2021-05-31 19:51:09.220133"], ["user_id", 7]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 992], ["auction_id", 22], ["created_at", "2021-05-31 19:51:09.223570"], ["updated_at", "2021-05-31 19:51:09.223570"], ["user_id", 7]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 305], ["auction_id", 22], ["created_at", "2021-05-31 19:51:09.225860"], ["updated_at", "2021-05-31 19:51:09.225860"], ["user_id", 1]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 536], ["auction_id", 22], ["created_at", "2021-05-31 19:51:09.227942"], ["updated_at", "2021-05-31 19:51:09.227942"], ["user_id", 7]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 888], ["auction_id", 22], ["created_at", "2021-05-31 19:51:09.230345"], ["updated_at", "2021-05-31 19:51:09.230345"], ["user_id", 1]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 646], ["auction_id", 22], ["created_at", "2021-05-31 19:51:09.232482"], ["updated_at", "2021-05-31 19:51:09.232482"], ["user_id", 7]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 204], ["auction_id", 22], ["created_at", "2021-05-31 19:51:09.234825"], ["updated_at", "2021-05-31 19:51:09.234825"], ["user_id", 3]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuction Create (0.3ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "body", "price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Navigating the interface won't do anything, we need to quantify the mobile scsi circuit!"], ["body", "It is impossible to begin to learn that which one thinks one already knows."], ["price", 98], ["created_at", "2020-09-24 00:00:00"], ["updated_at", "2020-09-24 00:00:00"], ["user_id", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBid Load (0.2ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 23]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 664], ["auction_id", 23], ["created_at", "2021-05-31 19:51:09.249188"], ["updated_at", "2021-05-31 19:51:09.249188"], ["user_id", 10]]
+  [1m[36mBid Create (0.6ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 40], ["auction_id", 23], ["created_at", "2021-05-31 19:51:09.253651"], ["updated_at", "2021-05-31 19:51:09.253651"], ["user_id", 7]]
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 145], ["auction_id", 23], ["created_at", "2021-05-31 19:51:09.256538"], ["updated_at", "2021-05-31 19:51:09.256538"], ["user_id", 2]]
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 780], ["auction_id", 23], ["created_at", "2021-05-31 19:51:09.258817"], ["updated_at", "2021-05-31 19:51:09.258817"], ["user_id", 4]]
+  [1m[36mBid Create (0.6ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 431], ["auction_id", 23], ["created_at", "2021-05-31 19:51:09.261369"], ["updated_at", "2021-05-31 19:51:09.261369"], ["user_id", 10]]
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 293], ["auction_id", 23], ["created_at", "2021-05-31 19:51:09.264311"], ["updated_at", "2021-05-31 19:51:09.264311"], ["user_id", 4]]
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 395], ["auction_id", 23], ["created_at", "2021-05-31 19:51:09.267229"], ["updated_at", "2021-05-31 19:51:09.267229"], ["user_id", 3]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuction Create (0.5ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "body", "price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Overriding the alarm won't do anything, we need to index the primary png hard drive!"], ["body", "Dignity does not consist in possessing honors, but in deserving them."], ["price", 55], ["created_at", "2018-08-12 00:00:00"], ["updated_at", "2018-08-12 00:00:00"], ["user_id", 3]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBid Load (0.3ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 24]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 429], ["auction_id", 24], ["created_at", "2021-05-31 19:51:09.283322"], ["updated_at", "2021-05-31 19:51:09.283322"], ["user_id", 1]]
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 196], ["auction_id", 24], ["created_at", "2021-05-31 19:51:09.286997"], ["updated_at", "2021-05-31 19:51:09.286997"], ["user_id", 11]]
+  [1m[36mBid Create (0.6ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 763], ["auction_id", 24], ["created_at", "2021-05-31 19:51:09.290102"], ["updated_at", "2021-05-31 19:51:09.290102"], ["user_id", 5]]
+  [1m[36mBid Create (0.6ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 45], ["auction_id", 24], ["created_at", "2021-05-31 19:51:09.292774"], ["updated_at", "2021-05-31 19:51:09.292774"], ["user_id", 3]]
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 86], ["auction_id", 24], ["created_at", "2021-05-31 19:51:09.295628"], ["updated_at", "2021-05-31 19:51:09.295628"], ["user_id", 6]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 797], ["auction_id", 24], ["created_at", "2021-05-31 19:51:09.298336"], ["updated_at", "2021-05-31 19:51:09.298336"], ["user_id", 4]]
+  [1m[36mBid Create (0.6ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 903], ["auction_id", 24], ["created_at", "2021-05-31 19:51:09.300556"], ["updated_at", "2021-05-31 19:51:09.300556"], ["user_id", 4]]
+  [1m[36mBid Create (0.6ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 777], ["auction_id", 24], ["created_at", "2021-05-31 19:51:09.303248"], ["updated_at", "2021-05-31 19:51:09.303248"], ["user_id", 8]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuction Create (0.5ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "body", "price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Try to connect the RAM monitor, maybe it will navigate the redundant system!"], ["body", "Pleasure in the job puts perfection in the work."], ["price", 96], ["created_at", "2018-10-21 00:00:00"], ["updated_at", "2018-10-21 00:00:00"], ["user_id", 8]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBid Load (0.4ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 25]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 275], ["auction_id", 25], ["created_at", "2021-05-31 19:51:09.318861"], ["updated_at", "2021-05-31 19:51:09.318861"], ["user_id", 2]]
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 318], ["auction_id", 25], ["created_at", "2021-05-31 19:51:09.322912"], ["updated_at", "2021-05-31 19:51:09.322912"], ["user_id", 6]]
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 654], ["auction_id", 25], ["created_at", "2021-05-31 19:51:09.325486"], ["updated_at", "2021-05-31 19:51:09.325486"], ["user_id", 1]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 348], ["auction_id", 25], ["created_at", "2021-05-31 19:51:09.328268"], ["updated_at", "2021-05-31 19:51:09.328268"], ["user_id", 5]]
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 158], ["auction_id", 25], ["created_at", "2021-05-31 19:51:09.330490"], ["updated_at", "2021-05-31 19:51:09.330490"], ["user_id", 1]]
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 215], ["auction_id", 25], ["created_at", "2021-05-31 19:51:09.333001"], ["updated_at", "2021-05-31 19:51:09.333001"], ["user_id", 3]]
+  [1m[36mBid Create (0.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 129], ["auction_id", 25], ["created_at", "2021-05-31 19:51:09.335377"], ["updated_at", "2021-05-31 19:51:09.335377"], ["user_id", 11]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 399], ["auction_id", 25], ["created_at", "2021-05-31 19:51:09.338064"], ["updated_at", "2021-05-31 19:51:09.338064"], ["user_id", 7]]
+  [1m[36mBid Create (0.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "auction_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 167], ["auction_id", 25], ["created_at", "2021-05-31 19:51:09.340615"], ["updated_at", "2021-05-31 19:51:09.340615"], ["user_id", 3]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "auctions"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "bids"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+Started GET "/api/v1/auctions" for ::1 at 2021-05-31 12:52:57 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+NoMethodError (undefined method `helper_method' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:6:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/api/application_controller.rb:1:in `<main>'
+app/controllers/api/v1/auctions_controller.rb:1:in `<main>'
+Started GET "/api/v1/auctions" for ::1 at 2021-05-31 12:53:19 -0700
+  
+NoMethodError (undefined method `helper_method' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:6:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/api/application_controller.rb:1:in `<main>'
+app/controllers/api/v1/auctions_controller.rb:1:in `<main>'
+Started GET "/api/v1/auctions" for ::1 at 2021-05-31 12:55:59 -0700
+  
+NoMethodError (undefined method `helper_method' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:6:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/api/application_controller.rb:1:in `<main>'
+app/controllers/api/v1/auctions_controller.rb:1:in `<main>'
+Started GET "/api/v1/auctions" for ::1 at 2021-05-31 12:56:45 -0700
+  
+NoMethodError (undefined method `helper_method' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:6:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/api/application_controller.rb:1:in `<main>'
+app/controllers/api/v1/auctions_controller.rb:1:in `<main>'
+Started GET "/api/v1/auctions" for ::1 at 2021-05-31 12:56:54 -0700
+  
+NoMethodError (undefined method `helper_method' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:6:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/api/application_controller.rb:1:in `<main>'
+app/controllers/api/v1/auctions_controller.rb:1:in `<main>'
+Started GET "/api/v1/auctions" for ::1 at 2021-05-31 12:59:06 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::AuctionsController#index as JSON
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.7ms | Allocations: 6234)
+
+
+  
+NameError (uninitialized constant Api::V1::AuctionsController::QuestionCollectionSerializer
+Did you mean?  AuctionCollectionSerializer):
+  
+app/controllers/api/v1/auctions_controller.rb:13:in `index'
+Started GET "/api/v1/auctions" for ::1 at 2021-05-31 12:59:12 -0700
+Processing by Api::V1::AuctionsController#index as JSON
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 1953)
+
+
+  
+NameError (uninitialized constant Api::V1::AuctionsController::QuestionCollectionSerializer
+Did you mean?  AuctionCollectionSerializer):
+  
+app/controllers/api/v1/auctions_controller.rb:13:in `index'
+Started GET "/api/v1/auctions" for ::1 at 2021-05-31 13:00:33 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+  [1m[36mAuction Load (0.8ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.84ms)
+Completed 200 OK in 47ms (Views: 26.9ms | ActiveRecord: 6.2ms | Allocations: 17554)
+
+
+Started GET "/api/v1/auctions/11" for ::1 at 2021-05-31 13:01:53 -0700
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"11"}
+  [1m[36mAuction Load (0.3ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" WHERE "auctions"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:39:in `find_auction'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+[active_model_serializers]   [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mBid Load (0.5ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers] Rendered AuctionSerializer with ActiveModelSerializers::Adapter::Attributes (38.3ms)
+Completed 200 OK in 61ms (Views: 47.4ms | ActiveRecord: 9.1ms | Allocations: 17890)
+
+
+Started GET "/api/v1/auctions" for ::1 at 2021-05-31 13:02:15 -0700
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+  [1m[36mAuction Load (0.7ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (59.66ms)
+Completed 200 OK in 67ms (Views: 64.5ms | ActiveRecord: 1.2ms | Allocations: 5385)
+
+
+Started GET "/api/v1/auctions/11" for ::1 at 2021-05-31 13:02:23 -0700
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"11"}
+  [1m[36mAuction Load (0.4ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" WHERE "auctions"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:39:in `find_auction'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mBid Load (0.5ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers] Rendered AuctionSerializer with ActiveModelSerializers::Adapter::Attributes (13.47ms)
+Completed 200 OK in 21ms (Views: 15.6ms | ActiveRecord: 2.1ms | Allocations: 4686)
+
+
+Started GET "/api/v1/auctions/11" for ::1 at 2021-05-31 13:04:29 -0700
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"11"}
+  [1m[36mAuction Load (0.3ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" WHERE "auctions"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:39:in `find_auction'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+[active_model_serializers]   [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mBid Load (1.9ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers] Rendered AuctionSerializer with ActiveModelSerializers::Adapter::Attributes (22.11ms)
+Completed 200 OK in 27ms (Views: 20.8ms | ActiveRecord: 4.1ms | Allocations: 4685)
+
+
+Started GET "/api/v1/auctions" for ::1 at 2021-05-31 13:04:33 -0700
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+  [1m[36mAuction Load (0.4ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.13ms)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.8ms | Allocations: 5363)
+
+
+Started GET "/api/v1/auctions/11" for ::1 at 2021-05-31 13:04:34 -0700
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"11"}
+  [1m[36mAuction Load (1.2ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" WHERE "auctions"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:39:in `find_auction'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mBid Load (0.5ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers] Rendered AuctionSerializer with ActiveModelSerializers::Adapter::Attributes (11.15ms)
+Completed 200 OK in 20ms (Views: 14.0ms | ActiveRecord: 3.1ms | Allocations: 4665)
+
+
+Started GET "/api/v1/auctions" for ::1 at 2021-05-31 13:11:21 -0700
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+  [1m[36mAuction Load (1.2ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.77ms)
+Completed 200 OK in 44ms (Views: 24.1ms | ActiveRecord: 6.8ms | Allocations: 14088)
+
+
+Started GET "/api/v1/auctions/22" for ::1 at 2021-05-31 13:11:22 -0700
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"22"}
+  [1m[36mAuction Load (0.3ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" WHERE "auctions"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:39:in `find_auction'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mBid Load (0.6ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 22]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers] Rendered AuctionSerializer with ActiveModelSerializers::Adapter::Attributes (42.19ms)
+Completed 200 OK in 50ms (Views: 43.1ms | ActiveRecord: 3.3ms | Allocations: 20015)
+
+
+Started GET "/api/v1/auctions" for ::1 at 2021-05-31 13:12:26 -0700
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+  [1m[36mAuction Load (0.6ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.36ms)
+Completed 200 OK in 32ms (Views: 17.9ms | ActiveRecord: 8.2ms | Allocations: 12423)
+
+
+Started GET "/api/v1/auctions/22" for ::1 at 2021-05-31 13:12:27 -0700
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"22"}
+  [1m[36mAuction Load (0.6ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" WHERE "auctions"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:39:in `find_auction'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mBid Load (0.3ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 22]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers] Rendered AuctionSerializer with ActiveModelSerializers::Adapter::Attributes (46.27ms)
+Completed 200 OK in 55ms (Views: 44.3ms | ActiveRecord: 7.8ms | Allocations: 20256)
+
+
+Started GET "/api/v1/auctions" for ::1 at 2021-05-31 13:12:28 -0700
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+  [1m[36mAuction Load (0.4ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.66ms)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.8ms | Allocations: 5364)
+
+
+Started GET "/api/v1/auctions/11" for ::1 at 2021-05-31 13:12:29 -0700
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"11"}
+  [1m[36mAuction Load (0.3ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" WHERE "auctions"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:39:in `find_auction'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mBid Load (0.7ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers] Rendered AuctionSerializer with ActiveModelSerializers::Adapter::Attributes (10.18ms)
+Completed 200 OK in 15ms (Views: 10.4ms | ActiveRecord: 2.5ms | Allocations: 4668)
+
+
+Started GET "/api/v1/auctions" for ::1 at 2021-05-31 13:12:33 -0700
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+  [1m[36mAuction Load (0.6ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.28ms)
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 1.0ms | Allocations: 5362)
+
+
+Started GET "/api/v1/auctions" for ::1 at 2021-05-31 13:12:51 -0700
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+  [1m[36mAuction Load (0.5ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.43ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.7ms | Allocations: 5362)
+
+
+Started GET "/api/v1/auctions" for ::1 at 2021-05-31 13:12:56 -0700
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+  [1m[36mAuction Load (0.5ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.39ms)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.9ms | Allocations: 5362)
+
+
+Started GET "/api/v1/auctions" for ::1 at 2021-05-31 13:13:34 -0700
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+  [1m[36mAuction Load (0.7ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.79ms)
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 1.0ms | Allocations: 5362)
+
+
+Started GET "/api/v1/auctions" for ::1 at 2021-05-31 13:13:37 -0700
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+  [1m[36mAuction Load (0.4ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.28ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.6ms | Allocations: 5362)
+
+
+Started GET "/api/v1/auctions" for ::1 at 2021-05-31 13:14:50 -0700
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+  [1m[36mAuction Load (0.5ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.29ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.9ms | Allocations: 5362)
+
+
+Started GET "/api/v1/auctions" for ::1 at 2021-05-31 13:14:52 -0700
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+  [1m[36mAuction Load (0.8ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.38ms)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 1.1ms | Allocations: 5362)
+
+
+Started GET "/api/v1/auctions/11" for ::1 at 2021-05-31 13:14:54 -0700
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"11"}
+  [1m[36mAuction Load (0.6ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" WHERE "auctions"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:39:in `find_auction'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mBid Load (0.5ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers] Rendered AuctionSerializer with ActiveModelSerializers::Adapter::Attributes (22.6ms)
+Completed 200 OK in 29ms (Views: 23.8ms | ActiveRecord: 2.3ms | Allocations: 4666)
+
+
+Started GET "/api/v1/auctions" for ::1 at 2021-05-31 13:14:56 -0700
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+  [1m[36mAuction Load (0.6ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.87ms)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 1.0ms | Allocations: 5363)
+
+
+Started GET "/api/v1/auctions/11" for ::1 at 2021-05-31 13:14:57 -0700
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"11"}
+  [1m[36mAuction Load (0.3ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" WHERE "auctions"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:39:in `find_auction'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mBid Load (0.5ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers] Rendered AuctionSerializer with ActiveModelSerializers::Adapter::Attributes (9.95ms)
+Completed 200 OK in 15ms (Views: 11.2ms | ActiveRecord: 1.7ms | Allocations: 4665)
+
+
+Started GET "/api/v1/auctions/11" for ::1 at 2021-05-31 13:19:53 -0700
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"11"}
+  [1m[36mAuction Load (0.4ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" WHERE "auctions"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:39:in `find_auction'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+[active_model_serializers]   [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mBid Load (1.2ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers] Rendered AuctionSerializer with ActiveModelSerializers::Adapter::Attributes (12.23ms)
+Completed 200 OK in 20ms (Views: 11.5ms | ActiveRecord: 4.9ms | Allocations: 4665)
+
+
+Started GET "/api/v1/auctions" for ::1 at 2021-05-31 13:21:43 -0700
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+  [1m[36mAuction Load (0.7ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.47ms)
+Completed 200 OK in 28ms (Views: 17.8ms | ActiveRecord: 6.0ms | Allocations: 12465)
+
+
+Started GET "/api/v1/auctions" for ::1 at 2021-05-31 13:21:44 -0700
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+  [1m[36mAuction Load (0.4ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.52ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.6ms | Allocations: 5363)
+
+
+Started GET "/api/v1/auctions/11" for ::1 at 2021-05-31 13:21:45 -0700
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"11"}
+  [1m[36mAuction Load (0.8ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" WHERE "auctions"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:39:in `find_auction'
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mBid Load (0.6ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers] Rendered AuctionSerializer with ActiveModelSerializers::Adapter::Attributes (30.66ms)
+Completed 200 OK in 40ms (Views: 28.9ms | ActiveRecord: 8.2ms | Allocations: 12801)
+
+
+Started GET "/api/v1/auctions" for ::1 at 2021-05-31 13:21:46 -0700
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+  [1m[36mAuction Load (0.5ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.38ms)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.8ms | Allocations: 5364)
+
+
+Started GET "/api/v1/auctions" for ::1 at 2021-05-31 13:21:49 -0700
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+  [1m[36mAuction Load (0.4ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.52ms)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.8ms | Allocations: 5362)
+
+
+Started GET "/api/v1/auctions" for ::1 at 2021-05-31 13:21:50 -0700
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+  [1m[36mAuction Load (0.5ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.75ms)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.9ms | Allocations: 5362)
+
+
+Started GET "/api/v1/auctions/11" for ::1 at 2021-05-31 13:22:28 -0700
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"11"}
+  [1m[36mAuction Load (1.2ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" WHERE "auctions"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:39:in `find_auction'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mBid Load (0.3ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers] Rendered AuctionSerializer with ActiveModelSerializers::Adapter::Attributes (10.07ms)
+Completed 200 OK in 18ms (Views: 12.0ms | ActiveRecord: 2.4ms | Allocations: 4665)
+
+
+Started GET "/api/v1/auctions" for ::1 at 2021-05-31 13:22:30 -0700
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+  [1m[36mAuction Load (0.5ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.78ms)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.7ms | Allocations: 5362)
+
+
+Started GET "/api/v1/auctions/11" for ::1 at 2021-05-31 13:22:41 -0700
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"11"}
+  [1m[36mAuction Load (0.3ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" WHERE "auctions"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:39:in `find_auction'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mBid Load (0.7ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers] Rendered AuctionSerializer with ActiveModelSerializers::Adapter::Attributes (11.07ms)
+Completed 200 OK in 16ms (Views: 11.7ms | ActiveRecord: 2.6ms | Allocations: 4665)
+
+
+Started GET "/api/v1/auctions/11" for ::1 at 2021-05-31 13:26:32 -0700
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"11"}
+  [1m[36mAuction Load (0.3ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" WHERE "auctions"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:39:in `find_auction'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mBid Load (0.3ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers] Rendered AuctionSerializer with ActiveModelSerializers::Adapter::Attributes (30.21ms)
+Completed 200 OK in 63ms (Views: 39.4ms | ActiveRecord: 10.9ms | Allocations: 19636)
+
+
+Started GET "/api/v1/auctions/11" for ::1 at 2021-05-31 13:26:36 -0700
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"11"}
+  [1m[36mAuction Load (0.3ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" WHERE "auctions"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:39:in `find_auction'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mBid Load (1.9ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers] Rendered AuctionSerializer with ActiveModelSerializers::Adapter::Attributes (10.43ms)
+Completed 200 OK in 17ms (Views: 9.9ms | ActiveRecord: 3.4ms | Allocations: 4667)
+
+
+Started GET "/api/v1/auctions/11" for ::1 at 2021-05-31 13:26:44 -0700
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"11"}
+  [1m[36mAuction Load (0.3ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" WHERE "auctions"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:39:in `find_auction'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mBid Load (0.3ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers]   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:19:in `show'
+[active_model_serializers] Rendered AuctionSerializer with ActiveModelSerializers::Adapter::Attributes (34.8ms)
+Completed 200 OK in 65ms (Views: 38.6ms | ActiveRecord: 13.1ms | Allocations: 19608)
+
+

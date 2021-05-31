@@ -1,5 +1,5 @@
 class Api::V1::AuctionsController < Api::ApplicationController
-  
+
   before_action :find_auction, only: [:show, :update, :destroy]
   before_action :authenticate_user!, only: [ :create, :destroy ]
 
@@ -10,7 +10,7 @@ class Api::V1::AuctionsController < Api::ApplicationController
       json: auctions,
       # To stop us from overfetching extra data from the 
       # QuestionSerializer, we can use a custom serializer.
-      each_serializer: QuestionCollectionSerializer,
+      each_serializer: AuctionCollectionSerializer,
     )
   end
 
@@ -18,7 +18,7 @@ class Api::V1::AuctionsController < Api::ApplicationController
     if @auction
       render(
         json: @auction,
-        include: [ :creator, { :bids } ]
+        include: [ :creator, { bids: [ :bidder ] } ]
       )
     else
       render(json: {error: "Auction Not Found"})
