@@ -1,6 +1,7 @@
 class Api::V1::BidsController < Api::ApplicationController
 
   before_action :find_auction,only:[:create,:destroy]
+  before_action :authenticate_user!, only: [ :create, :destroy ]
 
   def create
     bid = Bid.new bid_params

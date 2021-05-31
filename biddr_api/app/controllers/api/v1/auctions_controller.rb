@@ -1,6 +1,8 @@
 class Api::V1::AuctionsController < Api::ApplicationController
-  before_action :find_auction, only: [:show, :update, :destroy]
   
+  before_action :find_auction, only: [:show, :update, :destroy]
+  before_action :authenticate_user!, only: [ :create, :destroy ]
+
   def index
     auctions = Auction.order(created_at: :desc)
 
