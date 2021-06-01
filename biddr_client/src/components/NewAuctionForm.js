@@ -19,17 +19,23 @@ const NewAuctionForm = (props) => {
         <br />
       </div>
       <div>
-        <label htmlFor="body">Body</label>
+        <label htmlFor="body">Description</label>
         <textarea name="body" id="body" />
         <br />
       </div>
       <div>
-        <label htmlFor="price">Price</label>
-        <textarea name="price" id="price" />
+        <label htmlFor="ends_at">Ends at</label>
+        <textarea name="ends_at" id="ends_at" />
         <br />
       </div>
       <div>
-        <input type="submit" value="Submit" />
+        <label htmlFor="price">Reserve Price</label>
+        <textarea name="price" id="price" />
+        <br />
+      </div>
+
+      <div>
+        <input type="submit" value="Save" />
       </div>
     </form>
   );

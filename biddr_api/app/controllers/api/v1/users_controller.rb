@@ -1,6 +1,6 @@
 class Api::V1::UsersController < Api::ApplicationController
-
-  # before_action :authenticate_user!, only: [:current]
+  
+  before_action :authenticate_user!, only: [:current]
 
   def create
     user_params = params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation)
@@ -12,7 +12,7 @@ class Api::V1::UsersController < Api::ApplicationController
     else
       render(
         json: { errors: user.errors.messages },
-        status: 422 
+        status: 422 # Unprocessable Entity
       )
     end
   end
@@ -20,5 +20,4 @@ class Api::V1::UsersController < Api::ApplicationController
   def current
     render json: current_user
   end
-
 end

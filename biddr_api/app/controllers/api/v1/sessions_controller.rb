@@ -1,5 +1,4 @@
 class Api::V1::SessionsController < Api::ApplicationController
-
   def create
     user = User.find_by_email params[:email]
     if user && user.authenticate(params[:password])
@@ -9,7 +8,7 @@ class Api::V1::SessionsController < Api::ApplicationController
     else
         render(
           json: { status: 404 },
-          status: 404,
+          status: 404, # Not found
         )
     end
   end
@@ -21,5 +20,4 @@ class Api::V1::SessionsController < Api::ApplicationController
       status: 200,
     )
   end
-
 end

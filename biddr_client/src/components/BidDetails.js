@@ -13,9 +13,9 @@ function BidDetails({ price, bidder, created_at, id, deleteBid }) {
       </p>
       <div>
         <small>By {bidder ? bidder.full_name : null}</small>
-        <small style={{ marginLeft: "20px" }}>Bid made {created_at} ago</small>
+        <small style={{ marginLeft: "20px" }}>Bid made on: {created_at} </small>
       </div>
-      <button onClick={() => deleteBid(id)}>Delete</button>
+      {/* <button onClick={() => deleteBid(id)}>Delete</button> */}
     </div>
   );
 }

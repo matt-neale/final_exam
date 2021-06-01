@@ -11,18 +11,18 @@ const Navbar = ({ currentUser, onSignOut }) => {
 
   return (
     <nav>
-      <NavLink to="/">Home</NavLink> | |
+      <NavLink to="/">Home</NavLink>| |
       <NavLink to="/auctions">Auctions</NavLink>| |
       {currentUser ? (
         <>
-          {/* <NavLink to="/questions/new">New Question</NavLink>- */}
+          <NavLink to="/auctions/new">New Auction</NavLink>-
           <span>Welcome, {currentUser.full_name}</span>-
           <button onClick={handleSignOut}>Sign Out</button>
         </>
       ) : (
         <>
-          <NavLink to="/sign_in">Sign In</NavLink>
-          {/* <NavLink to="/sign_up">Sign Up</NavLink> */}
+          <NavLink to="/sign_in">Sign In</NavLink>| |
+          <NavLink to="/sign_up">Sign Up</NavLink>
         </>
       )}
     </nav>

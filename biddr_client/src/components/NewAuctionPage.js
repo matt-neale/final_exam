@@ -5,7 +5,7 @@ import { Auction } from "../requests";
 class NewAuctionPage extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { errors: [] };
     this.createAuction = this.createAuction.bind(this);
   }
   // Because NewQuestionPage is being renderd by a Route component provided by React-Router-Dom

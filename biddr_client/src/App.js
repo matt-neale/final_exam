@@ -9,6 +9,7 @@ import { User } from "./requests";
 import SignInPage from "./components/SignInPage";
 import NewAuctionPage from "./components/NewAuctionPage";
 import AuthRoute from "./components/AuthRoute";
+import SignUpPage from "./components/SignUpPage";
 
 class App extends Component {
   constructor(props) {
@@ -24,7 +25,6 @@ class App extends Component {
 
   getCurrentUser = () => {
     return User.current().then((user) => {
-      // console.log(`USER --->${user}`);
       if (user?.id) {
         this.setState((state) => {
           return { user };
@@ -50,6 +50,13 @@ class App extends Component {
               path="/sign_in"
               render={(routeProps) => (
                 <SignInPage {...routeProps} onSignIn={this.getCurrentUser} />
+              )}
+            />
+            <Route
+              exact
+              path="/sign_up"
+              render={(routeProps) => (
+                <SignUpPage {...routeProps} onSignUp={this.getCurrentUser} />
               )}
             />
             <Route exact path="/" component={WelcomePage} />

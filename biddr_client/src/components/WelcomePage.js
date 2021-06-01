@@ -1,5 +1,5 @@
 import React from "react";
-// import { Logo } from "../Auction.jpg";
+// import { Logo } from "../public/Auction.jpg";
 
 function WelcomePage(props) {
   return (

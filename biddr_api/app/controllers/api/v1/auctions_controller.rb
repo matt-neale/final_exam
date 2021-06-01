@@ -15,6 +15,8 @@ class Api::V1::AuctionsController < Api::ApplicationController
   end
 
   def show
+    @bids = Bid.order(price: :desc)
+
     if @auction
       render(
         json: @auction,

@@ -33,6 +33,7 @@ export const Auction = {
       body: JSON.stringify(params),
     }).then((res) => res.json());
   },
+
   show(id) {
     return fetch(`${BASE_URL}/auctions/${id}`).then((res) => res.json());
   },
@@ -72,7 +73,7 @@ export const Session = {
   create(params) {
     return fetch(`${BASE_URL}/session`, {
       method: "POST",
-      credentials: "include",
+      credentials: "include", //need this for cookies to be allowed to be sent cross-origin
       headers: {
         "Content-Type": "application/json",
       },
@@ -81,7 +82,7 @@ export const Session = {
   },
   currentUser() {
     return fetch(`${BASE_URL}/current_user`, {
-      credentials: "include",
+      credentials: "include", // We need to include a session in a request so we can fetch that particular user
     }).then((res) => res.json());
   },
   destroy() {
@@ -94,7 +95,6 @@ export const Session = {
 
 export const User = {
   current() {
-    console.log(`Hello World!!!!!!!!!!!!`);
     return fetch(`${BASE_URL}/users/current`, {
       credentials: "include",
     }).then((res) => res.json());

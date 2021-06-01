@@ -12,7 +12,7 @@ function BidList(props, deleteBid) {
               id={id}
               price={price}
               bidder={bidder}
-              created_at={created_at}
+              created_at={created_at.toLocaleString()}
               deleteBid={deleteBid}
             />
           ))

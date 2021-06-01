@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import AuctionDetails from "./AuctionDetails";
 import BidList from "./BidList";
+import NewBidForm from "./NewBidForm";
 import { Auction } from "../requests";
 
 class AuctionShowPage extends Component {
@@ -39,6 +40,7 @@ class AuctionShowPage extends Component {
           price={price}
           created_at={created_at}
         />
+        <NewBidForm price={price} created_at={created_at} />
         <h2>Previous Bids:</h2>
         <BidList bids={this.state.bids} deleteBid={this.deleteBid} />
       </main>
