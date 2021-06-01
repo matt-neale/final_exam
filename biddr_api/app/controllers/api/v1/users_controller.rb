@@ -1,6 +1,6 @@
 class Api::V1::UsersController < Api::ApplicationController
 
-  before_action :authenticate_user!, only: [:current]
+  # before_action :authenticate_user!, only: [:current]
 
   def create
     user_params = params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation)

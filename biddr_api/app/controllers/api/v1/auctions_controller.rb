@@ -33,6 +33,11 @@ class Api::V1::AuctionsController < Api::ApplicationController
     render json: {id: auction.id }
   end
 
+  def destroy
+    @auction.destroy
+    head :ok
+  end
+
   private
 
   def find_auction
